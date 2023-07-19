@@ -58,11 +58,14 @@ body {
   max-height: 556px;
   height: 100%;
   background: #000915;
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
 .footer .games {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
   align-items: center;
   justify-content: center;
 }
@@ -89,4 +92,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: calc(50% - 440px);
+    padding-right: calc(50% - 440px);
+  }
+  .footer {
+    max-height: 1200px;
+    height: 1200px;
+  }
+  .footer .games {
+    grid-template-columns: 378px;
+    grid-template-rows: repeat(3, 300px);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -53,11 +53,13 @@ body {
   max-height: 556px;
   height: 100%;
   background: #000915;
-
+  padding-top: 128px;
+  padding-bottom: 128px;
   .games {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
     align-items: center;
     justify-content: center;
     .game {
@@ -86,3 +88,4 @@ body {
     }
   }
 }
+@import "tablet";
