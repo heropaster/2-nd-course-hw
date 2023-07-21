@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+body,
+html {
+  height: 100vh;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.main {
+  background-image: url("../images/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000915;
+  height: 1024px;
+  padding-top: 217px;
+  .welcome {
+    max-width: 700px;
+    color: #fff;
+    &__title {
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    &__text {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px;
+      margin-bottom: 44px;
+    }
+    .start {
+      border-radius: 30px;
+      border: none;
+      background: #9c0332;
+      padding: 13px 74px;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+    }
+  }
+}
+.footer {
+  max-height: 556px;
+  height: 100%;
+  background: #000915;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  .games {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    .game {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      height: 300px;
+    }
+    .game-1 {
+      background: url("../images/game1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .game-2 {
+      background: url("../images/game2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .game-3 {
+      background: url("../images/game3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+@import "tablet";
