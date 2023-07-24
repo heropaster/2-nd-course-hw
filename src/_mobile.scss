@@ -1,0 +1,20 @@
+@media (max-width: 600px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main {
+        background-position: 31% 15px;
+        height: 735px;
+        .welcome {
+            text-align: center;
+            &__title {
+                font-size: 32px;
+            }
+            &__text {
+                font-size: 14px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

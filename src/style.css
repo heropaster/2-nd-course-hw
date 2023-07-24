@@ -13,6 +13,11 @@
 body,
 html {
   height: 100vh;
+  overflow-x: hidden;
+}
+
+input, button {
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -46,12 +51,17 @@ body {
 }
 .main .welcome .start {
   border-radius: 30px;
-  border: none;
+  border: 2px solid #9c0332;
   background: #9c0332;
   padding: 13px 74px;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.main .welcome .start:hover {
+  background: #fff;
+  color: #9c0332;
 }
 
 .footer {
@@ -74,6 +84,12 @@ body {
   color: #fff;
   text-decoration: none;
   height: 300px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+.footer .games .game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4px #fff;
 }
 .footer .games .game-1 {
   background: url("../images/game1.jpg");
@@ -107,4 +123,24 @@ body {
     grid-template-columns: 378px;
     grid-template-rows: repeat(3, 300px);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+@media (max-width: 600px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .main {
+    background-position: 31% 15px;
+    height: 735px;
+  }
+  .main .welcome {
+    text-align: center;
+  }
+  .main .welcome__title {
+    font-size: 32px;
+  }
+  .main .welcome__text {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+}
