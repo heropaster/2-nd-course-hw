@@ -120,7 +120,7 @@ body {
     height: 1200px;
   }
   .footer .games {
-    grid-template-columns: 378px;
+    grid-template-columns: minmax(300px, 378px);
     grid-template-rows: repeat(3, 300px);
   }
 }
