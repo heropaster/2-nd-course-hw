@@ -1,6 +1,6 @@
 // // 1
 // const greater = (first, second) => {
-// 	if (first > second || first === second) {
+// 	if (first >= second) {
 // 		return first;
 // 	} else return second;
 // };
@@ -69,7 +69,7 @@
 
 function whichMonth() {
 	let number = Number(prompt("Введи число"));
-	if (number == "") {
+	if (number == 0) {
 		throw new Error("Вы ничего не ввели");
 	} else if (isNaN(number) || number < 0 || number > 12) {
 		throw new Error("Ошибка, вы ввели неправильное число");
