@@ -1,14 +1,14 @@
 @media (max-width: 1200px) {
-  .container {
-    padding-left: calc(50% - 440px);
-    padding-right: calc(50% - 440px);
-  }
-  .footer {
-    max-height: 1200px;
-    height: 1200px;
-    .games {
-      grid-template-columns: minmax(300px, 378px);
-      grid-template-rows: repeat(3, 300px);
-    }
-  }
+	.container {
+		padding-left: calc(50% - 440px);
+		padding-right: calc(50% - 440px);
+	}
+	.games-list {
+		max-height: 1200px;
+		height: 1200px;
+		.games-links {
+			grid-template-columns: minmax(300px, 378px);
+			grid-template-rows: repeat(3, 300px);
+		}
+	}
 }
