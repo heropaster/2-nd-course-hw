@@ -143,6 +143,9 @@ body {
   max-height: 333px;
   height: 100%;
 }
+.games .game-2 {
+  flex-direction: row-reverse;
+}
 
 @media (max-width: 1200px) {
   .container {
